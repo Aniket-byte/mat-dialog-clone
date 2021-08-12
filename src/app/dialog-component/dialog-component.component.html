@@ -1,0 +1,9 @@
+<div style="display: flex;align-items: center; justify-content: center;flex-direction: column;">
+    <h3 style="margin:0;padding:0">{{data.message}}</h3>
+    <span style="display:block;margin: 10px 0;font:italic small-caps 500 14px/1 'sans-serif';">-- {{date|date}}</span>
+    <div style="display: flex; align-items: center; justify-content: flex-start;margin: 10px 0;">
+        <button
+            style="outline: none;background-color: white; border:1px solid black; padding:5px 10px;border-radius: 5px; font-family: inherit;"
+            (click)="dialogRef.close(data.message)">Close</button>
+    </div>
+</div>

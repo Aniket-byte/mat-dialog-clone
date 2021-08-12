@@ -1,0 +1,16 @@
+<nav class="nav bg-light">
+  <div class="container d-flex align-items-center justify-content-center">
+    <a class="nav-head" routerLink="/">Practise App</a>
+    <div class="nav-links">
+      <a class="nav-link" routerLink="/">Home</a>
+      <a class="nav-link" routerLink="/post">Post</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <button (click)="openDialog()">Open</button>
+  <router-outlet></router-outlet>
+</div>
+
+<app-loader *ngIf="loaderService.loaderStateSub | async"></app-loader>
